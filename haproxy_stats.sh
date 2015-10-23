@@ -12,7 +12,7 @@ svname="$2"
 stat="$3"
 
 DEBUG=${DEBUG:-0}
-HAPROXY_SOCKET="${HAPROXY_SOCKET:-/var/run/haproxy/info.sock}"
+HAPROXY_SOCKET="${HAPROXY_SOC/var/lib/haproxy/stats}"
 CACHE_STATS_FILEPATH="${CACHE_STATS_FILEPATH:-/var/tmp/haproxy_stats.cache}"
 CACHE_STATS_EXPIRATION="${CACHE_STATS_EXPIRATION:-5}" # in minutes
 CACHE_INFO_FILEPATH="${CACHE_INFO_FILEPATH:-/var/tmp/haproxy_info.cache}" ## unused

@@ -11,7 +11,7 @@
 #  global
 #  stats socket /run/haproxy/info.sock  mode 666 level user
 
-HAPROXY_SOCK="/var/run/haproxy/info.sock"
+HAPROXY_SOCK="/var/lib/haproxy/stats"
 [ -n "$1" ] && echo $1 | grep -q ^/ && HAPROXY_SOCK="$(echo $1 | tr -d '\040\011\012\015')"
 
 get_stats() {
